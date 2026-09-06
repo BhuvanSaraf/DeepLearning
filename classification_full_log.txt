@@ -1,0 +1,280 @@
+
+======================================================================
+dataset1: architecture search (hidden layers: 1)
+======================================================================
+
+--- hidden_dims=(4,), activation=logistic (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   100
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+--- hidden_dims=(4,), activation=tanh (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   100
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+--- hidden_dims=(8,), activation=logistic (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   100
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+--- hidden_dims=(8,), activation=tanh (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   100
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+--- hidden_dims=(16,), activation=logistic (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   100
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+--- hidden_dims=(16,), activation=tanh (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   100
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+>>> Best architecture for dataset1: hidden_dims=(4,), activation=logistic (val accuracy=1.0000)
+
+dataset1: TEST SET metrics for best architecture (hidden_dims=(4,), activation=logistic)
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   100
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+dataset1: Assignment 1 single-neuron perceptron baseline (trained on the same 60% training split, evaluated on the same test split)
+Assignment 1 perceptron test accuracy: 1.0000
+Assignment 2 FCNN (best) test accuracy: 1.0000
+
+======================================================================
+dataset2: architecture search (hidden layers: 2)
+======================================================================
+
+--- hidden_dims=(8, 4), activation=logistic (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0     96     4     0
+T1      0   100     0
+T2      0     0   200
+
+Accuracy: 0.9900
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     0.9600    0.9796
+   1   0.9615     1.0000    0.9804
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 0.9872  recall: 0.9867  f1: 0.9867
+Micro average -> precision: 0.9900  recall: 0.9900  f1: 0.9900
+
+--- hidden_dims=(8, 4), activation=tanh (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   200
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+--- hidden_dims=(16, 8), activation=logistic (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   200
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+--- hidden_dims=(16, 8), activation=tanh (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   200
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+--- hidden_dims=(16, 16), activation=logistic (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   200
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+--- hidden_dims=(16, 16), activation=tanh (validation set) ---
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   200
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+>>> Best architecture for dataset2: hidden_dims=(8, 4), activation=tanh (val accuracy=1.0000)
+
+dataset2: TEST SET metrics for best architecture (hidden_dims=(8, 4), activation=tanh)
+Confusion matrix:
+      P0  P1  P2
+T0    100     0     0
+T1      0   100     0
+T2      0     0   200
+
+Accuracy: 1.0000
+
+Per class metrics:
+      precision  recall    f1
+   0   1.0000     1.0000    1.0000
+   1   1.0000     1.0000    1.0000
+   2   1.0000     1.0000    1.0000
+
+Macro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+Micro average -> precision: 1.0000  recall: 1.0000  f1: 1.0000
+
+dataset2: Assignment 1 single-neuron perceptron baseline (trained on the same 60% training split, evaluated on the same test split)
+Assignment 1 perceptron test accuracy: 0.5000
+Assignment 2 FCNN (best) test accuracy: 1.0000
+
+======================================================================
+SUMMARY: FCNN (Assignment 2) vs single-neuron perceptron (Assignment 1)
+======================================================================
+dataset1: best hidden_dims=(4,), activation=logistic | FCNN test acc=1.0000 | Perceptron test acc=1.0000
+dataset2: best hidden_dims=(8, 4), activation=tanh | FCNN test acc=1.0000 | Perceptron test acc=0.5000
+
+Done. Plots saved under: results/classification

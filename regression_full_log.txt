@@ -1,0 +1,41 @@
+
+======================================================================
+dataset1: architecture search
+======================================================================
+hidden_dims=(4,): Train RMSE=0.0610 (%=0.85%) | Val RMSE=0.0546 (%=0.76%)
+hidden_dims=(8,): Train RMSE=0.0607 (%=0.84%) | Val RMSE=0.0541 (%=0.76%)
+hidden_dims=(16,): Train RMSE=0.0606 (%=0.84%) | Val RMSE=0.0541 (%=0.75%)
+
+>>> Best architecture for dataset1: hidden_dims=(16,) (val RMSE=0.0541)
+
+dataset1: TEST SET performance for best architecture (hidden_dims=(16,))
+Test RMSE = 0.0631  (%RMSE = 0.87%)
+
+dataset1: Assignment 1 linear perceptron baseline (trained on the same 60% training split, evaluated on the same test split)
+Assignment 1 perceptron test RMSE = 0.5291  (%RMSE = 7.32%)
+Assignment 2 FCNN (best)  test RMSE = 0.0631  (%RMSE = 0.87%)
+
+======================================================================
+dataset2: architecture search
+======================================================================
+hidden_dims=(8,): Train RMSE=0.0640 (%=0.53%) | Val RMSE=0.0644 (%=0.53%)
+hidden_dims=(16,): Train RMSE=0.0647 (%=0.53%) | Val RMSE=0.0650 (%=0.54%)
+hidden_dims=(8, 8): Train RMSE=0.0705 (%=0.58%) | Val RMSE=0.0715 (%=0.59%)
+hidden_dims=(16, 8): Train RMSE=0.0715 (%=0.59%) | Val RMSE=0.0725 (%=0.60%)
+
+>>> Best architecture for dataset2: hidden_dims=(8,) (val RMSE=0.0644)
+
+dataset2: TEST SET performance for best architecture (hidden_dims=(8,))
+Test RMSE = 0.0640  (%RMSE = 0.53%)
+
+dataset2: Assignment 1 linear perceptron baseline (trained on the same 60% training split, evaluated on the same test split)
+Assignment 1 perceptron test RMSE = 0.7136  (%RMSE = 5.96%)
+Assignment 2 FCNN (best)  test RMSE = 0.0640  (%RMSE = 0.53%)
+
+======================================================================
+SUMMARY: FCNN (Assignment 2) vs linear perceptron (Assignment 1)
+======================================================================
+dataset1: best hidden_dims=(16,) | FCNN test RMSE=0.0631 (%=0.87%) | Perceptron test RMSE=0.5291 (%=7.32%)
+dataset2: best hidden_dims=(8,) | FCNN test RMSE=0.0640 (%=0.53%) | Perceptron test RMSE=0.7136 (%=5.96%)
+
+Done. Plots saved under: results/regression
