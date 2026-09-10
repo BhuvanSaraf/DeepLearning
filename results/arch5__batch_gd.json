@@ -1,0 +1,1 @@
+{"arch_name": "arch5", "hidden_dims": [256, 128, 64, 32, 16], "optimizer_name": "batch_gd", "batch_size": 11385, "epochs_trained": 2, "max_epochs": 1500, "hit_max_epochs": false, "error_history": [1.6209391355514526, 1.620933175086975], "train_accuracy": 0.20000000298023224, "val_accuracy": 0.20000000298023224, "elapsed_seconds": 0.2977297306060791}

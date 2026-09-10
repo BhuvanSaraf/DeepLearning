@@ -1,0 +1,95 @@
+{
+  "best_arch": "arch4",
+  "best_hidden_dims": [
+    256,
+    128,
+    64,
+    32
+  ],
+  "best_optimizer": "sgd_momentum",
+  "best_optimizer_display": "SGD + Momentum (Generalized Delta)",
+  "val_accuracy": 0.9865612387657166,
+  "train_accuracy": 0.9999121427536011,
+  "test_accuracy": 0.9823451638221741,
+  "train_confusion_matrix": [
+    [
+      2277,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2277,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2276,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      2277,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2277
+    ]
+  ],
+  "test_confusion_matrix": [
+    [
+      753,
+      1,
+      2,
+      3,
+      0
+    ],
+    [
+      2,
+      744,
+      0,
+      9,
+      4
+    ],
+    [
+      1,
+      1,
+      752,
+      2,
+      3
+    ],
+    [
+      4,
+      4,
+      5,
+      741,
+      5
+    ],
+    [
+      5,
+      4,
+      9,
+      3,
+      738
+    ]
+  ],
+  "class_labels": [
+    "0",
+    "3",
+    "4",
+    "8",
+    "9"
+  ]
+}
