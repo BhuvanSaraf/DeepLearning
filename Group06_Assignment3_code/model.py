@@ -1,14 +1,3 @@
-"""
-model.py
-
-A configurable fully-connected neural network (3-5 hidden layers,
-per the assignment). Cross-entropy loss is applied outside the model
-(via nn.CrossEntropyLoss, which expects raw logits), so the final
-layer here has no activation.
-
-Group 06
-"""
-
 import torch
 import torch.nn as nn
 

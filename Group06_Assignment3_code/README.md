@@ -91,3 +91,11 @@ minutes on CPU in our runs.
 - Name the zip `Group06_Assignment3_code.zip`, containing a folder
   named `Group06_Assignment3_code`.
 - Name the report `Group06_Assignment3_report.pdf`.
+
+
+## Bhuvan's Comments:
+
+Within Group06_Assignment3_code
+- python3 -m venv .venv
+- source .venv/bin/activate
+- pip3 install -r requirements.txt
