@@ -24,7 +24,10 @@ OPTIMIZER_DISPLAY_NAMES = {
 
 
 ARCHITECTURES = {
-    'arch3': [256, 128, 64],                    #TODO
-    'arch4': [256, 128, 64, 32],                #....These are questionable...     
-    'arch5': [256, 128, 64, 32, 16],            #we will change them shortly...
+    'arch3_gradual': [512, 128, 32],                    #TODO
+    'arch4_gradual': [512, 256, 128, 32],                #....These are questionable...     
+    'arch5_gradual': [512, 256, 128, 64, 32],            #we will change them shortly...
+    'arch3_const':   [256, 256, 256],
+
 }
+input = 784
