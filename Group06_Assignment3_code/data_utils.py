@@ -1,13 +1,3 @@
-"""
-data_utils.py
-
-Loads the Group 06 MNIST-subset (5 classes: 0, 3, 4, 8, 9) from the
-train/val/test folders of JPEG images, flattens each 28x28 image to a
-784-dim vector, and returns everything as PyTorch tensors.
-
-Group 06
-"""
-
 import os
 import numpy as np
 import torch
