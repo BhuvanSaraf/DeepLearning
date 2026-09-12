@@ -1,0 +1,27 @@
+{
+    "arch_name": "arch4_gradual",
+    "hidden_dims": [
+        512,
+        256,
+        128,
+        32
+    ],
+    "optimizer_name": "adagrad",
+    "batch_size": 11385,
+    "epochs_trained": 3,
+    "max_epochs": 1500,
+    "hit_max_epochs": false,
+    "error_history_t": [
+        1.6204984188079834,
+        1.6204986572265625,
+        1.6204986572265625
+    ],
+    "error_history_v": [
+        1.6201351881027222,
+        1.6201351881027222,
+        1.6201351881027222
+    ],
+    "train_accuracy": 0.20000000298023224,
+    "val_accuracy": 0.20000001788139343,
+    "elapsed_seconds": 0.08911848068237305
+}

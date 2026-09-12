@@ -1,0 +1,26 @@
+{
+    "arch_name": "arch3_gradual",
+    "hidden_dims": [
+        512,
+        128,
+        32
+    ],
+    "optimizer_name": "adam",
+    "batch_size": 1,
+    "epochs_trained": 3,
+    "max_epochs": 1500,
+    "hit_max_epochs": false,
+    "error_history_t": [
+        1.6179721355438232,
+        1.617972026417849,
+        1.617972026417849
+    ],
+    "error_history_v": [
+        1.6178781986236572,
+        1.6178781986236572,
+        1.6178781986236572
+    ],
+    "train_accuracy": 0.17435222864151,
+    "val_accuracy": 0.18076416850090027,
+    "elapsed_seconds": 29.01476240158081
+}
