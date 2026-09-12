@@ -69,7 +69,7 @@ def train_one(arch_name, optimizer_name, max_epochs):
     y_test = y_test.to(DEVICE)
 
 
-    model = FCNN(INPUT_D, hidden_dims, OUTPUT_D)
+    model = FCNN(INPUT_D, hidden_dims, OUTPUT_D).to(DEVICE)
     optimizer = opt_cfg['make'](model.parameters())
     batch_size = 1 if opt_cfg['batch_mode'] == 'sgd' else N
     criterion = nn.CrossEntropyLoss()
@@ -80,7 +80,6 @@ def train_one(arch_name, optimizer_name, max_epochs):
 
     init_state = get_or_create_init_weights(arch_name, hidden_dims)
     model.load_state_dict(init_state)   # SAME initial weights
-    model = FCNN(INPUT_D, hidden_dims, OUTPUT_D).to(DEVICE)
     
     #------------------------------------------------------------------
     # To Evaluate 0th epoch errors, to ensure fairness
@@ -130,12 +129,9 @@ def train_one(arch_name, optimizer_name, max_epochs):
             epoch_reached = epoch + 1
             break
         prev_avg_loss = avg_loss_t
-
-    else:
-        epoch_reached = max_epochs
-
+    
     elapsed =  (time.time() - t0)
-    epochs_trained = len(error_history_t)
+    epochs_trained = len(error_history_t)-1
 
     train_acc = accuracy(model, X_train, y_train)
     val_acc = accuracy(model, X_val, y_val)

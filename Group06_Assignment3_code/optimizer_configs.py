@@ -30,4 +30,3 @@ ARCHITECTURES = {
     'arch3_const':   [256, 256, 256],
 
 }
-input = 784
