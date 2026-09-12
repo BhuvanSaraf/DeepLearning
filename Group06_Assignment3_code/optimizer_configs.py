@@ -1,22 +1,4 @@
-"""
-optimizer_configs.py
-
-The 7 optimizer configurations required by the assignment, with the
-exact hyperparameters specified in the assignment PDF:
-  - learning rate = 0.001 for all optimizers
-  - momentum = 0.9 for generalized delta rule and NAG
-  - RMSProp: beta=0.99, eps=1e-8
-  - Adam: beta1=0.9, beta2=0.999, eps=1e-8
-
-Each entry also specifies the batch size mode:
-  - 'sgd'  -> batch_size = 1  (true stochastic gradient descent)
-  - 'full' -> batch_size = N  (the full training set, i.e. batch/vanilla GD)
-
-Group 06
-"""
-
 import torch
-
 
 def get_optimizer_configs():
     return {
@@ -30,7 +12,6 @@ def get_optimizer_configs():
     }
 
 
-# human-readable names for plots/tables/report
 OPTIMIZER_DISPLAY_NAMES = {
     'sgd': 'SGD (batch_size=1)',
     'batch_gd': 'Batch GD (batch_size=N)',
@@ -43,7 +24,7 @@ OPTIMIZER_DISPLAY_NAMES = {
 
 
 ARCHITECTURES = {
-    'arch3': [256, 128, 64],           # 3 hidden layers
-    'arch4': [256, 128, 64, 32],       # 4 hidden layers
-    'arch5': [256, 128, 64, 32, 16],   # 5 hidden layers
+    'arch3': [256, 128, 64],                    #TODO
+    'arch4': [256, 128, 64, 32],                #....These are questionable...     
+    'arch5': [256, 128, 64, 32, 16],            #we will change them shortly...
 }
