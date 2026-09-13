@@ -22,11 +22,12 @@ OPTIMIZER_DISPLAY_NAMES = {
     'adam': 'Adam (batch_size=1)',
 }
 
-
 ARCHITECTURES = {
-    'arch3_gradual': [512, 128, 32],                    #TODO
-    'arch4_gradual': [512, 256, 128, 32],                #....These are questionable...     
-    'arch5_gradual': [512, 256, 128, 64, 32],            #we will change them shortly...
-    'arch3_const':   [256, 256, 256],
-
+    'arch3_gradual': [512, 128, 32],                    
+    'arch4_gradual': [512, 256, 128, 32],                  
+    'arch5_gradual': [512, 256, 128, 64, 32],           
+    'arch3_big': [1024, 256, 32],                    
+    'arch4_big': [1024, 256, 128, 32],                  
+    'arch5_big': [1024, 512, 256, 128, 32],               
 }
+
