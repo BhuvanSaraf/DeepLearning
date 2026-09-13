@@ -124,7 +124,7 @@ def train_one(arch_name, optimizer_name, max_epochs):
         error_history_v.append(val_loss.item()) 
 
         # assignment's literal stopping criterion 
-        if prev_avg_loss is not None and abs(prev_avg_loss - avg_loss_t) < TOLARENCE:
+        if prev_avg_loss is not None and epoch >= 5 and abs(prev_avg_loss - avg_loss_t) < TOLARENCE:
             converged = True
             epoch_reached = epoch + 1
             break
